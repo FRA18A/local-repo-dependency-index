@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-repo-dependency-index"
+version = "0.1.0"
+description = "Local non-LLM repository dependency index and impact analysis engine"
+readme = "PACKAGE_INSTALL.md"
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML>=6.0"
+]
+
+[project.scripts]
+repo-index = "repo_tools.repo_index:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["repo_tools*"]
+

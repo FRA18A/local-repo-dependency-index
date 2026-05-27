@@ -28,6 +28,9 @@ repo-index init
 repo-index index
 repo-index risk-report
 ```
+OR...
+Just ask AI agent to install it
+
 
 ## GitHub use
 
